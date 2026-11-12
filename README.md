@@ -37,6 +37,8 @@ Ferramentas de Desenvolvimento
 
 🚧 Status do Projeto
 
-🟡 Em planejamento e desenvolvimento.
+🟡 **Em planejamento e desenvolvimento.**
 
-O projeto encontra-se na fase inicial, com definição da ideia, organização e preparação do ambiente de desenvolvimento. 
+A ideia do projeto já foi definida pelo grupo: desenvolver uma aplicação web chamada **Clima Inteligente**, que utilizará uma API meteorológica para consultar informações climáticas e oferecer recomendações de atividades de acordo com as condições do tempo.
+
+Atualmente, o projeto encontra-se na fase de planejamento.
