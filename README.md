@@ -28,10 +28,6 @@ Ferramentas de Desenvolvimento
 - Git
 - GitHub
 
-📂 Organização do Repositório
-
-A estrutura de pastas e arquivos será definida conforme o planejamento e a evolução do projeto.
-
 📅 Informações Acadêmicas
 
 - Curso: Análise e Desenvolvimento de Sistemas (ADS)
