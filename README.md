@@ -1,44 +1,146 @@
-# mvp-ads-2026.2
-🚀 MVP – Mínimo Produto Viável
+# 🌦️ Clima Inteligente
 
-📌 Sobre o Projeto
+> Aplicação web que consulta informações climáticas em tempo real por meio de uma API meteorológica e recomenda atividades adequadas às condições do tempo.
 
-Este repositório foi criado para armazenar o desenvolvimento de um projeto acadêmico de MVP (Mínimo Produto Viável), realizado durante o 2º período do curso de Análise e Desenvolvimento de Sistemas (ADS).
+**MVP – Mínimo Produto Viável | ADS – 2º período | 2026.2**
 
-O projeto envolve conhecimentos e práticas das disciplinas de:
+## Participantes
 
-- Coding
-- Desenvolvimento de Aplicações para Internet
+      - *Integrante 1*:José Adriel Pereira da Silva - 16039859
+      - *Integrante 2*: Matheus levi santos andrade - 16039555
+      - *Integrante 3*: Bruno dos santos teles - 16039329
+      - *Integrante 4*: Gabriel Ribeiro de Almeida - 16039730
+      - *Integrante 5.* Guilherme Oliveira De Miranda - 16039757
 
-🎯 Objetivo
+---
 
-Desenvolver uma solução tecnológica a partir de uma ideia, aplicando na prática os conhecimentos adquiridos durante o período acadêmico, desde o planejamento até a implementação de um produto mínimo viável.
+## 📌 Sobre o Projeto
 
-💻 Tecnologias e Ferramentas
+Este repositório armazena o desenvolvimento de um projeto acadêmico de MVP, realizado durante o 2º período do curso de Análise e Desenvolvimento de Sistemas (ADS), envolvendo as disciplinas de **Codificação** e **Desenvolvimento de Aplicações para Internet**.
 
-Linguagens de Programação
+O objetivo acadêmico é desenvolver uma solução tecnológica a partir de uma ideia, aplicando na prática os conhecimentos adquiridos, desde o planejamento até a implementação de um produto mínimo viável.
 
-- HTML
-- CSS
-- JavaScript
+---
 
-Ferramentas de Desenvolvimento
+## 1. Visão Geral
 
-- Visual Studio Code (VS Code)
-- Git
-- GitHub
+### 1.1 Descrição do Projeto
 
-📅 Informações Acadêmicas
+O **Clima Inteligente** é uma aplicação web que permite ao usuário pesquisar uma cidade, visualizar as condições climáticas atuais (temperatura, sensação térmica, umidade, vento e chance de chuva) e receber sugestões de atividades compatíveis com o tempo. Destina-se a pessoas que desejam planejar o dia de forma prática, sem precisar interpretar os dados meteorológicos por conta própria.
 
-- Curso: Análise e Desenvolvimento de Sistemas (ADS)
-- Período: 2º período
-- Disciplinas: Coding e Desenvolvimento de Aplicações para Internet
-- Projeto: MVP – Mínimo Produto Viável
+### 1.2 Objetivo
 
-🚧 Status do Projeto
+Oferecer, em uma única tela, informações climáticas claras e recomendações de atividades coerentes com o tempo, ajudando o usuário a decidir o que fazer ao longo do dia.
 
-🟡 **Em planejamento e desenvolvimento.**
+### 1.3 Proposta de Valor
 
-A ideia do projeto já foi definida pelo grupo: desenvolver uma aplicação web chamada **Clima Inteligente**, que utilizará uma API meteorológica para consultar informações climáticas e oferecer recomendações de atividades de acordo com as condições do tempo.
+- Une **previsão do tempo** e **sugestão de atividades** em um só lugar.
+- Transforma dados técnicos em recomendações simples e diretas.
+- Interface leve, responsiva e sem necessidade de cadastro.
 
-Atualmente, o projeto encontra-se na fase de planejamento.
+---
+
+## 2. Problema
+
+### 2.1 Contexto
+
+O clima influencia diretamente a rotina: passeios, exercícios ao ar livre, eventos e deslocamentos dependem das condições do tempo. Apesar de haver muita informação meteorológica disponível, ela costuma ser apresentada apenas como números e ícones.
+
+### 2.2 Problema Identificado
+
+Muitas pessoas consultam a previsão, mas têm dificuldade em decidir **que atividade é adequada** para aquelas condições, o que leva a planos cancelados, desconfortos ou à perda de tempo pesquisando alternativas.
+
+### 2.3 Soluções Existentes
+
+Aplicativos e sites de previsão do tempo (como os nativos dos celulares e portais de meteorologia) entregam bem os dados climáticos, porém, em geral, **não traduzem essas informações em recomendações práticas de atividades**, deixando a interpretação a cargo do usuário.
+
+### 2.4 Hipótese do MVP
+
+Ao combinar os dados de uma API meteorológica com regras simples de recomendação, o usuário conseguirá decidir mais rápido e com mais segurança o que fazer em cada condição climática.
+
+---
+
+## 3. Público-Alvo
+
+### 3.1 Perfil dos Usuários
+
+Pessoas que planejam atividades diárias: estudantes, trabalhadores, praticantes de exercícios ao ar livre, famílias e turistas.
+
+### 3.2 Necessidades
+
+- Saber rapidamente como está e como ficará o tempo.
+- Receber ideias de atividades adequadas ao clima.
+- Acessar a informação de forma simples, no celular ou no computador.
+
+### 3.3 Cenário de Utilização
+
+O usuário acessa a aplicação pelo navegador, digita o nome da cidade e, em segundos, visualiza o clima atual e uma lista de atividades sugeridas (por exemplo, atividades ao ar livre em dias de sol e opções em ambientes fechados em dias de chuva).
+
+---
+
+## 4. Escopo do MVP
+
+### 4.1 Funcionalidades Principais
+
+- [ ] **Funcionalidade 01 – Busca por cidade:** permite ao usuário pesquisar o clima de uma cidade.
+- [ ] **Funcionalidade 02 – Exibição do clima atual:** apresenta temperatura, sensação térmica, umidade, vento e condição do tempo, consumindo a API meteorológica.
+- [ ] **Funcionalidade 03 – Recomendação de atividades:** sugere atividades de acordo com a condição climática (sol, chuva, nublado, frio, calor).
+- [ ] **Funcionalidade 04 – Interface responsiva e tratamento de erros:** layout adaptável a celular e computador, com mensagens claras para cidade não encontrada ou falha na API.
+
+---
+
+## 5. Arquitetura da Solução
+
+### 5.1 Visão Arquitetural
+
+A aplicação é um **front-end web** (HTML, CSS e JavaScript) executado no navegador. O JavaScript consome diretamente uma **API meteorológica externa** via requisições HTTP e aplica as regras de recomendação localmente antes de exibir o resultado na interface.
+
+**Componentes principais:**
+
+- **Interface (HTML/CSS):** campo de busca, cartão de clima e lista de recomendações.
+- **Lógica (JavaScript):** consumo da API, tratamento dos dados e regras de recomendação.
+- **API meteorológica:** fonte dos dados de clima.
+
+### 5.2 Fluxo Principal
+
+1. O usuário informa o nome da cidade e envia a busca.
+2. O JavaScript faz a requisição à API meteorológica.
+3. A resposta é tratada e os dados relevantes são exibidos na tela.
+4. As regras de recomendação selecionam as atividades adequadas às condições e as apresentam ao usuário.
+
+---
+
+## 6. Tecnologias Utilizadas
+
+| Categoria | Tecnologia | Finalidade |
+|-----------|------------|------------|
+| Linguagem de Programação | JavaScript | Lógica da aplicação, consumo da API e regras de recomendação |
+| Front-end | HTML e CSS | Estrutura, estilo e responsividade da interface |
+| Back-end | Não utilizado | A API externa é consumida diretamente pelo front-end |
+| Banco de Dados | Não utilizado | O MVP não persiste dados |
+| Ferramentas | Visual Studio Code, Git e GitHub | Desenvolvimento, versionamento e colaboração em equipe |
+
+---
+
+## 7. Requisitos
+
+### 7.1 Requisitos Funcionais
+
+- **RF01:** O sistema deve permitir a busca do clima por nome de cidade.
+- **RF02:** O sistema deve exibir as condições climáticas atuais obtidas da API meteorológica.
+- **RF03:** O sistema deve recomendar atividades de acordo com as condições do tempo.
+
+### 7.2 Requisitos Não Funcionais
+
+- **RNF01 (Desempenho):** A resposta da consulta deve ser exibida em poucos segundos em condições normais de conexão.
+- **RNF02 (Segurança):** A chave da API, se houver, não deve ser exposta de forma indevida no repositório público.
+- **RNF03 (Usabilidade):** A interface deve ser simples, intuitiva e responsiva, funcionando em diferentes tamanhos de tela.
+
+---
+
+## 📅 Informações Acadêmicas
+
+- **Curso:** Análise e Desenvolvimento de Sistemas (ADS)
+- **Período:** 2º período (2026.2)
+- **Disciplinas:** Codificação e Desenvolvimento de Aplicações para Internet
+- **Projeto:** MVP – Mínimo Produto Viável
