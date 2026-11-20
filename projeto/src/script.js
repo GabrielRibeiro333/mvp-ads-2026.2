@@ -3,6 +3,7 @@ const API_KEY = "7226e3c98daa4012b68230846261611";
 const botaoDeBusca = document.getElementById('buscar-btn');
 const campoDeTexto = document.getElementById('cidade-input');
 const caixaDeResultado = document.getElementById('resultado');
+const botaoTema = document.getElementById('tema-btn');
 
 botaoDeBusca.addEventListener('click', async () => {
     // Pega o valor que o usuário digitou no campo de texto
@@ -38,5 +39,21 @@ botaoDeBusca.addEventListener('click', async () => {
     } catch (erro) {
         console.error(erro);
         caixaDeResultado.innerHTML = "Erro ao conectar com a API.";
+    }
+});
+
+campoDeTexto.addEventListener('keydown', (evento) => {
+    if (evento.key === 'Enter') {
+        botaoDeBusca.click();
+    }
+});
+
+botaoTema.addEventListener('click', () => {
+    document.body.classList.toggle('modo-escuro');
+
+    if (document.body.classList.contains('modo-escuro')) {
+        botaoTema.textContent = 'Modo Claro';
+    } else {
+        botaoTema.textContent = 'Modo Escuro';
     }
 });
