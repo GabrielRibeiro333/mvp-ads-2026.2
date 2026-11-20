@@ -1,4 +1,3 @@
-const API_KEY = "7226e3c98daa4012b68230846261611"; 
 
 const botaoDeBusca = document.getElementById('buscar-btn');
 const campoDeTexto = document.getElementById('cidade-input');
