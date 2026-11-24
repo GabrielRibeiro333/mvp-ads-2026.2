@@ -122,20 +122,25 @@ A aplicação é um **front-end web** (HTML, CSS e JavaScript) executado no nave
 
 ---
 
-## 7. Requisitos
+## 7. Requisitos do Sistema
+
+As necessidades do projeto foram organizadas entre as funcionalidades principais da aplicação e os critérios de qualidade técnica:
 
 ### 7.1 Requisitos Funcionais
 
-- **RF01:** O sistema deve permitir a busca do clima por nome de cidade.
-- **RF02:** O sistema deve exibir as condições climáticas atuais obtidas da API meteorológica.
-- **RF03:** O sistema deve recomendar atividades de acordo com as condições do tempo.
+| Código | Requisito | Descrição |
+| :--- | :--- | :--- |
+| **RF01** | **Busca por Localidade** | O usuário pode pesquisar e consultar a previsão informando o nome da cidade desejada. |
+| **RF02** | **Exibição do Clima** | O sistema consome a API meteorológica e apresenta na tela as condições atuais do tempo. |
+| **RF03** | **Sugestão de Atividades** | Com base na condição climática identificada, a aplicação recomenda atividades adequadas ao momento. |
 
 ### 7.2 Requisitos Não Funcionais
 
-- **RNF01 (Desempenho):** A resposta da consulta deve ser exibida em poucos segundos em condições normais de conexão.
-- **RNF02 (Segurança):** A chave da API, se houver, não deve ser exposta de forma indevida no repositório público.
-- **RNF03 (Usabilidade):** A interface deve ser simples, intuitiva e responsiva, funcionando em diferentes tamanhos de tela.
-
+| Código | Pilar | Descrição |
+| :--- | :--- | :--- |
+| **RNF01** | **Desempenho** | As respostas das consultas devem ser processadas e exibidas em poucos segundos sob condições normais de rede. |
+| **RNF02** | **Segurança** | Caso utilize chaves de acesso (API Keys), elas devem ser protegidas e nunca expostas diretamente no repositório público. |
+| **RNF03** | **Usabilidade** | A interface precisa ser limpa, intuitiva e totalmente
 ---
 
 ## 📅 Informações Acadêmicas
